@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/moviesFragment"
+            android:icon="@drawable/ic_movie"
+            android:title="Movies" />
+
+        <item
+            android:id="@+id/tvShowFragment"
+            android:icon="@drawable/ic_tv_show"
+            android:title="Tv Shows"
+            />
+
+        <item
+            android:id="@+id/artistFragment"
+            android:icon="@drawable/ic_artist"
+            android:title="Artists"
+            />
+
+    </group>
+</menu>
