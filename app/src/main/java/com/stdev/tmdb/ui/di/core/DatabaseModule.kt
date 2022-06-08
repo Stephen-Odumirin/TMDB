@@ -2,6 +2,7 @@ package com.stdev.tmdb.ui.di.core
 
 import android.content.Context
 import androidx.room.Room
+import androidx.room.migration.Migration
 import com.stdev.tmdb.data.db.ArtistDao
 import com.stdev.tmdb.data.db.MovieDao
 import com.stdev.tmdb.data.db.TMDBDatabase
@@ -16,7 +17,9 @@ class DatabaseModule {
     @Singleton
     @Provides
     fun provideMovieDatabase(context : Context) : TMDBDatabase{
-        return Room.databaseBuilder(context,TMDBDatabase::class.java,"tmdbClient").build()
+        return Room.databaseBuilder(context,TMDBDatabase::class.java,"tmdbClient")
+            .fallbackToDestructiveMigration()
+            .build()
     }
 
     @Singleton

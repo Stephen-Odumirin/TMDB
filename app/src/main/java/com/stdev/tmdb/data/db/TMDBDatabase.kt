@@ -7,7 +7,7 @@ import com.stdev.tmdb.data.model.movie.Movie
 import com.stdev.tmdb.data.model.tvshow.TvShow
 
 @Database(entities = [Movie::class,TvShow::class,Artist::class],
-version = 1,
+version = 2,
 exportSchema = false)
 
 abstract class TMDBDatabase : RoomDatabase() {

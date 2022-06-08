@@ -24,12 +24,12 @@ data class Movie(
 //    val popularity: Double?,
     @SerializedName("poster_path")
     val posterPath: String?,
-//    @SerializedName("release_date")
-//    val releaseDate: String?,
     @SerializedName("title")
     val title: String?,
-//    @SerializedName("video")
-//    val video: Boolean?,
+    @SerializedName("release_date")
+    val releaseDate: String? = "",
+    @SerializedName("video")
+    val video: Boolean? = false,
 //    @SerializedName("vote_average")
 //    val voteAverage: Double?,
 //    @SerializedName("vote_count")
